@@ -199,23 +199,8 @@ export default function HomePage() {
     <div className="overflow-hidden">
 
       {/* ====================== HERO ====================== */}
-      <section className="relative flex min-h-screen items-center justify-center gradient-mesh pt-20 pb-12">
-        <div className="absolute top-1/4 left-10 h-72 w-72 animate-blob rounded-full bg-secondary/20 blur-3xl" />
-        <div className="absolute bottom-1/4 right-10 h-96 w-96 animate-blob animation-delay-2000 rounded-full bg-primary/30 blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 h-64 w-64 -translate-x-1/2 animate-blob animation-delay-1000 rounded-full bg-secondary/10 blur-3xl" />
-        <div className="absolute inset-0 overflow-hidden">
-          {Array.from({ length: 20 }).map((_, i) => (
-            <div
-              key={i}
-              className="absolute h-2 w-2 rounded-full bg-white/20"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animation: `float ${4 + Math.random() * 6}s ease-in-out ${Math.random() * 5}s infinite`,
-              }}
-            />
-          ))}
-        </div>
+      <section className="relative flex min-h-screen items-center justify-center pt-20 pb-12" style={{ backgroundImage: 'url(/images/SSP Bioquest Scientific Discovery Banner.png)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat' }}>
+        <div className="absolute inset-0" style={{ background: 'rgba(20,30,70,0.55)' }} />
 
         {/* Scroll mouse indicator — clickable */}
         <button
